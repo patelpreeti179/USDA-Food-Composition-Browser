@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>USDA Food Composition</title>
+    <link rel="shortcut icon" href="palmtreefavicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="parallel.css" />
+  </head>
+  <body>
+  <div id="header">
+    <h1>USDA Food Composition</h1>
+    <div style="clear:both;"></div>
+  </div>
+  <div id="chart">
+    <canvas id="background"></canvas>
+    <canvas id="foreground"></canvas>
+    <canvas id="highlight"></canvas>
+    <svg></svg>
+  </div>
+  <div id="wrap">
+    <div  class="third">
+      <small>
+      </small>
+      <h3>Food Groups</h3>
+      <p id="legend">
+      </p>
+    </div>
+    <div class="half">
+      <h3>Food List</h3>
+      <input type="text" id="search" placeholder="Search Any Foods" style="width: 300px;"></input>
+      <p id="food-list">
+      </p>
+    </div>
+  </div>
+  </body>
+  <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+  <script src="http://underscorejs.org/underscore.js"></script>
+  <script src="parallel.js"></script>
+</html>

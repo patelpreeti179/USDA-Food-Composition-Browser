@@ -1,0 +1,199 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+body {
+
+  font-size: 0.9em;
+  line-height: 1.4em;
+  background:  #1b2330;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e6e6e6;
+}
+
+a {
+  text-decoration: none;
+  color: #5ae;
+}
+
+#wrap {
+  padding: 0 3.5%;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+svg {
+  font-family: Arial;
+}
+canvas, svg {
+  position: absolute;
+  top: 4%;
+  left: 0;
+}
+#chart {
+  position: relative;
+}
+.brush rect.extent {
+  fill: rgba(100,100,100,0.15);
+  stroke: #ddd;
+}
+.brush:hover rect.extent {
+  stroke: #222;
+  stroke-dasharray: 5,5;
+}
+.brush rect.extent:hover {
+  stroke-dasharray: none;
+}
+.resize rect {
+  fill: none;
+}
+.background {
+  fill: none;
+}
+.axis line, .axis path {
+  fill: none;
+  stroke: white;
+  stroke-width: 1;
+}
+
+.axis .tick {
+  width: 200px;
+}
+.axis text {
+  fill: #cccccc;
+  text-anchor: right;
+  font-size: 11px;
+}
+.axis text.label {
+  font-size: 12px;
+  cursor: move;
+  padding-bottom: 24px;
+  fill: #cccccc;
+}
+
+.third, .half {
+  float: left;
+}
+.third {
+  width: 35%;
+  margin: 0 1%;
+}
+.half {
+  width: 54%;
+  margin: 0 1% 0 3%;
+}
+h3 {
+  margin: 12px 0 9px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+h3 small {
+  color: #888;
+  font-weight: normal;
+}
+p {
+  margin: 0.6em 0;
+}
+small {
+  line-height: 1.2em;
+}
+button[disabled=disabled] {
+  color: #555 !important;
+  opacity: 0.4;
+}
+.settings button[disabled=disabled] {
+  display: none;
+}
+
+
+#food-list {
+  width: 100%;
+  height: 460px;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+#legend {
+  text-align: left;
+  overflow-y: auto;
+}
+.row {
+  cursor: pointer;
+}
+.row:hover {
+  font-size: 16px;
+  line-height: 1.3em;
+}
+.off {
+  color: #8c8c8c;
+}
+
+.color-block, .color-bar {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  margin: 1px 4px 1px 0px;
+}
+#rendered-bar,
+#selected-bar {
+  width:0%;
+  font-weight: bold;
+}
+#rendered-bar {
+  background: #888;
+  border-right: 1px solid #666;
+}
+#selected-bar {
+  background: rgba(160,160,160,0.5);
+  border-right: 1px solid #999;
+}
+.fillbar {
+  height: 12px;
+  line-height: 12px;
+  border:1px solid rgba(120,120,120,0.5);
+  width: 120px;
+  display: inline-block;
+}
+.little-box {
+  width: 268px;
+  float: left;
+}
+#header {
+  border-bottom: 1px solid rgba(100,100,100,0.35);
+  background: #1b2330;
+  padding: 6px 24px 4px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#header h1 {
+  display: inline-block;
+  margin: 0px 14px 0 0;
+}
+#header button {
+  vertical-align: top;
+}
+.controls {
+  float: right;
+  height: 24px;
+  line-height: 24px;
+}
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a6a6a6;
+  border-radius: 12px;
+}
